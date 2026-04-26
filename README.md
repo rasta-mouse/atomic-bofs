@@ -13,8 +13,8 @@ Each test unit requires a `config.spec` file that sets the following variables:
 - `$COFF` is the raw bytes of the BOF to load.  You'd typically grab this using Crystal Palace's `load` command.
 - `$ARGS` are packed arguments for the BOF.  Use Crystal Palace's `pack` command to form these.
 
-    > [!NOTE]
-    > You are required to pack the length of a value (such as strings) as required by the Beacon APIs.
+> [!NOTE]
+> You are required to pack the length of a value (such as strings) as required by the Beacon APIs.
 
 - `%entrypoint` is the name of the BOFs entrypoint.  This is typicall `go` for x64 BOFs and `_go` for x86.
 
